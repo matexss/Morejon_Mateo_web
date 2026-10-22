@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLUB DEPORTIVO</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="contenedor-grid">
+
+    
+    <header class="cabecera">
+        <h1 class="cabecera__titulo">Club Deportivo</h1>
+        
+        <nav class="navegacion" aria-label="Navegación principal"> 
+            <ul class="navegacion__lista"> 
+                <li class="navegacion__item">
+                    <a href="#inicio" class="navegacion__enlace">Inicio</a>
+                </li>
+                 <li class="navegacion__item">
+                    <a href="#inicio" class="navegacion__enlace">Servicios</a>
+                </li> 
+                
+                <li class="navegacion__item">
+                    <a href="#inicio" class="navegacion__enlace">Futbol</a>
+                </li>
+                    
+            </ul>
+        </nav>
+    </header>
+    <main class="contenido-principal">
+        <section class="seccion-reservas">
+            <h2>Reservas de Cancha</h2>
+
+            <form action="#" method="POST" class="formulario-reserva">
+    <fieldset>
+        <legend>Datos de la Reserva</legend>
+
+        <div class="grupo-formulario">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required pattern="[A-Za-z\s]+" title="Solo letras y espacios">
+        </div>
+        <div class="grupo-formulario">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+
+        <div class="grupo-formulario">
+            <label for="telefono">Teléfono (10 dígitos):</label>
+            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}">
+        </div>
+
+        <div class="grupo-formulario">
+            <label for="fecha-reserva">Fecha y hora de reserva:</label>
+            <input type="datetime-local" id="fecha-reserva" name="fecha-reserva" required>
+        </div>
+
+        <div class="grupo-formulario">
+            <label for="cancha">Tipo de Cancha:</label>
+            <select id="cancha" name="cancha" required>
+                <option value="">Seleccione una opción...</option>
+                <option value="f5">Fútbol 5</option>
+                <option value="f7">Fútbol 7</option>
+                <option value="f11">Fútbol 11</option>
+            </select>
+        </div>
+
+        <button type="submit">Confirmar Reserva</button>
+    </fieldset>
+</form>
+        </section>
+
+        <section class="seccion-posiciones">
+            <h2>Tabla de Posiciones</h2>
+
+            <table class="tabla-datos">
+    <caption>Tabla de posiciones - Temporada 2026</caption>
+    <thead>
+        <tr>
+            <th scope="col">Posición</th>
+            <th scope="col">Equipo</th>
+            <th scope="col">PJ</th>
+            <th scope="col">Puntos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Club Deportivo</td>
+            <td>10</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Atlético Cuenca</td>
+            <td>10</td>
+            <td>22</td>
+        </tr>
+    </tbody>
+</table>
+        </section>
+    </main>
+
+    <aside class="barra-lateral">
+        <h2>Próximos Partidos</h2>
+        <p>Información complementaria del club.</p>
+    </aside>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Club Deportivo.</p>
+    </footer>
+
+</body>
+</html>
