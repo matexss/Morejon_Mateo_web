@@ -6,12 +6,11 @@
     --color-secundario: #ffffff; 
 }
 
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+* { box-sizing: border-box;
+     margin: 0; 
+     padding: 0;
+    
+    }
 
 body {
     background-color: #f4f4f4;;
@@ -33,10 +32,17 @@ body {
 }
 
 
-.cabecera { grid-area: header; }
-.contenido-principal { grid-area: main; }
-.barra-lateral { grid-area: aside; }
-.pie-pagina { grid-area: footer; }
+.cabecera {
+     grid-area: header; 
+}
+.contenido-principal { 
+    grid-area: main;
+ }
+.barra-lateral { 
+    grid-area: aside; 
+}
+.pie-pagina { 
+    grid-area: footer; }
 
 @media (min-width: 800px) {
     .contenedor-grid {
@@ -82,6 +88,37 @@ body {
 }
 
 /* --- COMPONENTES INTERNOS --- */
+.informacion-club{
+     background-color: #ffffff;
+    padding: 20px;
+    border: 4px solid #e82020;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: justify;
+
+    .fotos-club {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center; 
+}
+
+.fotos-club img {
+    border-radius: 12px; 
+    object-fit: cover; 
+}
+}
+.informacion-club h2 {
+    text-align: center; 
+    margin-bottom: 15px;
+}
+.fotos-club{
+   display:  flex; 
+   gap: 15px; 
+    margin-top: 15px;   
+}
+
+.seccion-info,
 .seccion-reservas, 
 .seccion-posiciones, 
 .barra-lateral {
@@ -91,7 +128,6 @@ body {
     border-radius: 5px;
     margin-bottom: 20px;
 }
-
 
 .grupo-formulario {
     margin-bottom: 15px;
