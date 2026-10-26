@@ -6,7 +6,7 @@
     }
 
 body {
-    background-color: #f4f4f4;;
+    background-color: #f4f4f4;
     color: #1a1a1a;
     font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;    line-height: 1.6;
     padding: 10px;
@@ -29,7 +29,15 @@ body {
 .cabecera {
      grid-area: header; 
     max-width: 100%;
+    padding: 0;
     height: auto;
+}
+.cabecera img {
+   width: 100%;
+    max-height: 250px; 
+    object-fit: contain; 
+    display: block;
+    margin: 0 auto;
 }
 .contenido-principal { 
     grid-area: main;
@@ -51,7 +59,7 @@ body {
 }
 
 .cabecera {
-    background-color: #004080;;
+    background-color: #004080;
     color: #ffffff;
     padding: 20px;
     text-align: center;
@@ -76,7 +84,7 @@ body {
 .navegacion__enlace:hover,
 .navegacion__enlace:focus {
     background-color: #ffffff;
-    color: #004080;;
+    color: #004080;
     outline: 2px solid #ffcc00; 
 }
 .navegacion__sublista {
@@ -196,7 +204,7 @@ input, select {
 
 button {
     background-color: #004080; 
-    color: var(--color-secundario);
+    color: #dee4ea;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
