@@ -13,4 +13,4 @@
 1. **Atributo title faltante en input con pattern (Accesibilidad):** El auditor no notó que el campo de teléfono (`<input type="tel">`) tenía un atributo `pattern="[0-9]{10}"` pero le faltaba el atributo `title`. Según las normas de accesibilidad y HTML, siempre que se usa un `pattern`, se debe proveer un `title` para que el navegador explique al usuario el formato esperado si ocurre un error. 
 
 **Solución:** Se añadió `title="Debe ingresar exactamente 10 números"` al input.
-   * *Commit:* `feat: mejora accesibilidad añadiendo title al input de telefono`
+   * *Commit:* `feat: adición de title al input de telefono`
