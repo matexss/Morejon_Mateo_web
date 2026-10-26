@@ -15,9 +15,10 @@
 body {
     background-color: #f4f4f4;;
     color: #1a1a1a;
-    font-family: Arial, sans-serif; 
-    line-height: 1.6;
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;    line-height: 1.6;
     padding: 10px;
+    font-size: 1.1rem;
+    
 }
 
 
@@ -33,7 +34,9 @@ body {
 
 
 .cabecera {
-     grid-area: header; 
+     grid-area: header;
+    max-width: 100%;
+    height: auto;
 }
 .contenido-principal { 
     grid-area: main;
